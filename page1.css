@@ -27,6 +27,14 @@ li a:hover {
     background-color: #111;
 }
 
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: left;
+}
+
 .button {
     text-align: center;
     border-radius: 20%;
@@ -48,4 +56,36 @@ input[type=text], input[type=password], input[type=date], input[type=number] {
 .button {
     text-align: center;
     border-radius: 20%;
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+
+td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #333;
+    color: white;
 }
