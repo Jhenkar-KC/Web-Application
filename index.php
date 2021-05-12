@@ -21,7 +21,7 @@
     <div class="box">
         <div>
             <h4>New User</h4>
-            <p>Please register yourself,By Clicking here  <a href="login.html">Login</a>
+            <p>Please register yourself,By Clicking here  <a href="login.php">Login</a>
             </p>
         </div>
         <div>
