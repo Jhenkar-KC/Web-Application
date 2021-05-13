@@ -257,54 +257,57 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </head>
 
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-        <div <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>>
+        <div class="container">
+            <div <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>>
 
 
-            <a><input type="text" placeholder="Enter Username" value="<?php echo $username; ?>"></a>
+                <a><input type="text" placeholder="Enter Username" value="<?php echo $username; ?>"></a>
 
-            <span><?php echo $username_err; ?></span>
+                <span><?php echo $username_err; ?></span>
 
+            </div>
+            <div <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>>
+
+                <a><input type="password" placeholder="Enter Password" minlength="8" value="<?php echo $password; ?>"></a>
+                <span><?php echo $password_err; ?></span>
+
+            </div>
+            <div <?php echo (!empty($confirm_password_err)) ? 'has-error' : ''; ?>>
+
+
+                <a><input type="password" placeholder="Confirm Password" minlength="8" value="<?php echo $confirm_password; ?>"></a>
+                <span><?php echo $confirm_password_err; ?></span>
+
+            </div>
+            <div <?php echo (!empty($email_err)) ? 'has-error' : ''; ?>>
+                <a> <input type="text" placeholder="Enter E-mail" value="<?php echo $email; ?>"></a>
+                <span><?php echo $email_err; ?></span>
+
+            </div>
+            <div <?php echo (!empty($age_err)) ? 'has-error' : ''; ?>>
+
+                <a> <input type="text" placeholder="Enter Your age" value="<?php echo $age; ?>"></a>
+                <span><?php echo $age_err; ?></span>
+
+            </div>
+            <div <?php echo (!empty($gender_err)) ? 'has-error' : ''; ?>>
+
+                <a> <input type="text" placeholder="Enter Gender" value="<?php echo $gender; ?>"></a>
+                <span><?php echo $gender_err; ?></span>
+
+            </div>
+            <div <?php echo (!empty($phone_err)) ? 'has-error' : ''; ?>>
+
+                <a> <input type="text" placeholder="Enter Phone" maxlength="10" value="<?php echo $phone; ?>"></a>
+                <span><?php echo $phone_err; ?></span>
+
+            </div>
+
+            <div class=button>
+                <input type="button" value="Submit">
+            </div>
         </div>
-        <div <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>>
 
-            <a><input type="password" placeholder="Enter Password" minlength="8" value="<?php echo $password; ?>"></a>
-            <span><?php echo $password_err; ?></span>
-
-        </div>
-        <div <?php echo (!empty($confirm_password_err)) ? 'has-error' : ''; ?>>
-
-
-            <a><input type="password" placeholder="Confirm Password" minlength="8" value="<?php echo $confirm_password; ?>"></a>
-            <span><?php echo $confirm_password_err; ?></span>
-
-        </div>
-        <div <?php echo (!empty($email_err)) ? 'has-error' : ''; ?>>
-            <a> <input type="text" placeholder="Enter E-mail" value="<?php echo $email; ?>"></a>
-            <span><?php echo $email_err; ?></span>
-
-        </div>
-        <div <?php echo (!empty($age_err)) ? 'has-error' : ''; ?>>
-
-            <a> <input type="text" placeholder="Enter Your age" value="<?php echo $age; ?>"></a>
-            <span><?php echo $age_err; ?></span>
-
-        </div>
-        <div <?php echo (!empty($gender_err)) ? 'has-error' : ''; ?>>
-
-            <a> <input type="text" placeholder="Enter Gender" value="<?php echo $gender; ?>"></a>
-            <span><?php echo $gender_err; ?></span>
-
-        </div>
-        <div <?php echo (!empty($phone_err)) ? 'has-error' : ''; ?>>
-
-            <a> <input type="text" placeholder="Enter Phone" maxlength="10" value="<?php echo $phone; ?>"></a>
-            <span><?php echo $phone_err; ?></span>
-
-        </div>
-
-        <div class=button>
-            <input type="button" value="Submit">
-        </div>
     </form>
 
 

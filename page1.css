@@ -1,6 +1,7 @@
 body {
     background-color: rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
+    overflow: scroll;
 }
 
 ul {
@@ -64,10 +65,10 @@ input[type=text], input[type=password], input[type=email], input[type=date], inp
 .box {
     width: 100%;
     margin: auto;
-    position: relative;
+    position: sticky;
     margin-left: -50vw;
     height: 100px;
-/*     margin-top: 100px; */
+    /*     margin-top: 100px; */
     left: 50%;
     border: 1px solid #ccc;
 }
@@ -91,4 +92,12 @@ th {
     text-align: left;
     background-color: #333;
     color: white;
+}
+
+.container {
+    position: static;
+    border-radius: 1px;
+    padding: 10px 20px;
+    text-align: center;
+    margin: 1in;
 }
